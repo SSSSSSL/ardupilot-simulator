@@ -1,3 +1,4 @@
 [submodule "arducopter-dockerfile"]
 	path = arducopter-dockerfile
 	url = https://github.com/SSSSSSL/arducopter-dockerfile.git
+	branch = Copter-4.0.7
