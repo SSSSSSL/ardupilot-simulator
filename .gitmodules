@@ -1,0 +1,3 @@
+[submodule "arducopter-dockerfile"]
+	path = arducopter-dockerfile
+	url = https://github.com/SSSSSSL/arducopter-dockerfile.git
