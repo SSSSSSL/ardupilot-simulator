@@ -1,0 +1,23 @@
+version: "3"
+
+services:
+  sitl:
+    image: ardupilot:Copter-4.0.7
+    ports:
+      - 12344:5760
+    deploy:
+      replicas: 20
+      update_config:
+        parallelism: 5
+        delay: 10s
+      restart_policy:
+        condition: on-failure
+        max_attempts: 3
+        window: 120s
+    networks:
+      - sitl
+
+
+networks:
+  sitl:
+    driver: overlay
